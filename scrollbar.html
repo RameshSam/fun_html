@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Scrollbar</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .class
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: ;
+            font-size: 5rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .class:nth-child(1)
+        {
+            background: red;
+        }
+        .class:nth-child(2)
+        {
+            background: rebeccapurple;
+        }
+        .class:nth-child(3)
+        {
+            background: green;
+        }
+        .class:nth-child(4)
+        {
+            background: blue;
+        }
+        .class:nth-child(5)
+        {
+            background: rgb(255, 136, 0);
+        }
+        body::-webkit-scrollbar
+        {
+            width: 15px;
+        }
+        body::-webkit-scrollbar-track
+        {
+            border: 2px solid white;
+        }
+        body::-webkit-scrollbar-thumb
+        {
+            background: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="class">First Border</div>
+    <div class="class">Second Border</div>
+    <div class="class">Third Border</div>
+    <div class="class">Fourth Border</div>
+    <div class="class">Fivth Border</div>
+</body>
+</html>

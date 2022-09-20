@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> S A M | Home </title>
+</head>
+<body>
+ 
+    <p>SAM RAMESH</p>
+
+
+    <style>
+       body{
+           margin: 0;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+      p{
+         font-size: 12rem;
+         position: relative;
+         z-index: 0;
+         font-weight: 600;
+         cursor: pointer;
+
+       }
+       p::before{
+           content:'';
+           position: absolute;
+           background-color: blue;
+           inset: 0;
+           z-index: -1;
+           transform: scaleX(0);
+           transform-origin: right;
+           transition: transform 1s ease-in-out;
+       }
+       p:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+        background-color: black;
+
+       }
+       p:hover{
+           color: aliceblue;
+       }
+    </style>
+</body>
+</html>
